@@ -65,7 +65,7 @@ class Geometria:
         Returns:
             float: Área del triángulo
         """
-        pass
+        return  (base*altura)/2
     
     def perimetro_triangulo(self, lado1, lado2, lado3):
         """
