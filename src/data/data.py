@@ -205,4 +205,12 @@ class Data:
         Returns:
             list: Matriz transpuesta
         """
-        return [[fila[i] for fila in matriz] for i in range(len(matriz[0]))]
+        filas = len(matriz)
+        columnas = len(matriz[0])
+        transpuesta = [[0] * filas for _ in range(columnas)]
+    
+        for i in range(filas):
+            for j in range(columnas):
+                transpuesta[j][i] = matriz[i][j]
+    
+        return transpuesta
