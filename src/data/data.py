@@ -34,7 +34,7 @@ class Data:
         for i in range(len(lista)): 
             if lista[i] == elemento:  
                 return i  
-            return -1
+        return -1
     
     def eliminar_duplicados(self, lista):
         """
