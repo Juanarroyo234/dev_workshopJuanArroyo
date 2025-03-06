@@ -78,7 +78,7 @@ class Logica:
         Returns:
             bool: Resultado de a NOR b
         """
-        pass
+        return not(a or b)
     
     def XNOR(self, a, b):
         """
@@ -91,7 +91,7 @@ class Logica:
         Returns:
             bool: Resultado de a XNOR b
         """
-        pass
+        return a == b
     
     def implicacion(self, a, b):
         """
@@ -104,7 +104,7 @@ class Logica:
         Returns:
             bool: Resultado de la implicación
         """
-        pass
+        return(not a) or b
     
     def bi_implicacion(self, a, b):
         """
@@ -117,6 +117,6 @@ class Logica:
         Returns:
             bool: Resultado de la bi-implicación
         """
-        pass
+        return a == b
     
     
