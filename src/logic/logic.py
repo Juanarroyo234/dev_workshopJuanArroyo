@@ -52,7 +52,7 @@ class Logica:
         Returns:
             bool: Resultado de a XOR b
         """
-        pass
+        return a ^ b
     
     def NAND(self, a, b):
         """
