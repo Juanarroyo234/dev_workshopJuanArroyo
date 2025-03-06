@@ -1,3 +1,4 @@
+import math
 class Geometria:
     """
     Class with geometric exercises.
@@ -135,7 +136,7 @@ class Geometria:
         Returns:
             float: Área del pentágono regular
         """
-        pass
+        return ()
     
     def perimetro_pentagono_regular(self, lado):
         """
