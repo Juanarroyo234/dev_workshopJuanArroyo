@@ -14,8 +14,11 @@ class Data:
         Returns:
             list: Lista con los elementos en orden inverso
         """
-        pass
-    
+        lista_invertida = []
+        for i in range(len(lista) - 1, -1, -1):  # Recorremos la lista de atrás hacia adelante
+            lista_invertida.append(lista[i])
+        return lista_invertida
+
     def buscar_elemento(self, lista, elemento):
         """
         Busca un elemento en una lista y devuelve su índice (o -1 si no existe).
