@@ -205,4 +205,4 @@ class Data:
         Returns:
             list: Matriz transpuesta
         """
-        pass
+        return [[fila[i] for fila in matriz] for i in range(len(matriz[0]))]
