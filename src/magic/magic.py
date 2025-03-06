@@ -74,7 +74,7 @@ class Magic:
         Returns:
             list: Lista de listas que representa el triángulo de Pascal
         """
-        pass
+        return [[comb(fila, col) for col in range(fila + 1)] for fila in range(n)]
     
     def factorial(self, n):
         """
