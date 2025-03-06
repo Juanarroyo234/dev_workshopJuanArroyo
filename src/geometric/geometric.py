@@ -68,7 +68,7 @@ class Geometria:
         """
         return  (base*altura)/2
     
-    def perimetro_triangulo(self, lado1, lado2, lado3):
+    def perimetro_triangulo(self, base, altura):
         """
         Calcula el perímetro de un triángulo.
         
@@ -80,7 +80,7 @@ class Geometria:
         Returns:
             float: Perímetro del triángulo
         """
-        pass
+        return 2*(base +altura)
     
     def es_triangulo_valido(self, lado1, lado2, lado3):
         """
