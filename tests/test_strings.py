@@ -103,7 +103,7 @@ class TestStrings:
         assert self.strings.cifrar_cesar("Zebra", 2) == "Bgdtc"
         assert self.strings.cifrar_cesar("Python!", 5) == "Udymts!"
         assert self.strings.cifrar_cesar("abc XYZ", 4) == "efg BCD"
-        assert self.strings.cifrar_cesar("Mensaje Secreto", 7) == "Tluzhql Ljlzhual"
+        assert self.strings.cifrar_cesar("Mensaje Secreto", 7) == "Tluzhql Zljylav"
     def test_descifrar_cesar(self):
         # Test con texto cifrado con desplazamiento positivo
         assert self.strings.descifrar_cesar("khoor", 3) == "hello"
