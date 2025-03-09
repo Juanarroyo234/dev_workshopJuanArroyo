@@ -141,11 +141,11 @@ class Strings:
         """
         resultado = ""
         for caracter in texto:
-            if caracter.isalpha():
-                inicio = ord('A') if caracter.isupper() else ord('a')
-                resultado += chr(inicio + (ord(caracter) - inicio + desplazamiento) % 26)
-            else:
-                resultado += caracter
+                if caracter.isalpha():
+                    inicio = ord('A') if caracter.isupper() else ord('a')
+                    resultado += chr(inicio + (ord(caracter) - inicio + desplazamiento) % 26)
+                else:
+                    resultado += caracter
         return resultado
     
     def descifrar_cesar(self, texto, desplazamiento):
