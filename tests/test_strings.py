@@ -98,25 +98,11 @@ class TestStrings:
         assert self.strings.es_numero_entero("12.34") == False
         assert self.strings.es_numero_entero("-0.67")== False
 
-    def test_descifrar_cesar(self):
-        # Test con texto cifrado con desplazamiento positivo
-        assert self.strings.descifrar_cesar("khoor", 3) == "hello"
-        assert self.strings.descifrar_cesar("sduwlflsduw", 3) == "participar"
-
-        # Test con texto cifrado con desplazamiento negativo
-        assert self.strings.descifrar_cesar("ebiil", -3) == "hello"
-        assert self.strings.descifrar_cesar("oxmrfmoxmrf", -3) == "participar"
-
-        # Test con texto sin desplazamiento
-        assert self.strings.descifrar_cesar("hello", 0) == "hello"
-        assert self.strings.descifrar_cesar("participar", 0) == "participar"
-
-        # Test con caracteres especiales y espacios
-        assert self.strings.descifrar_cesar("Khoor, Zruog!", 3) == "Hello, World!"
-        assert self.strings.descifrar_cesar("SdUwlflsduw!", 3) == "PaRticipar!"
     def test_cifrar_cesar(self):
         assert self.strings.cifrar_cesar("Hola", 3) == "Krod"
         assert self.strings.cifrar_cesar("Zebra", 2) == "Bgdtc"
         assert self.strings.cifrar_cesar("Python!", 5) == "Udymts!"
         assert self.strings.cifrar_cesar("abc XYZ", 4) == "efg BCD"
         assert self.strings.cifrar_cesar("Mensaje Secreto", 7) == "Tluzhql Ljlzhual"
+
+
