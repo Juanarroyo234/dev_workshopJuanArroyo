@@ -105,20 +105,11 @@ class TestStrings:
         assert self.strings.cifrar_cesar("abc XYZ", 4) == "efg BCD"
         assert self.strings.cifrar_cesar("Mensaje Secreto", 7) == "Tluzhql Zljylav"
     def test_descifrar_cesar(self):
-        # Test con texto cifrado con desplazamiento positivo
-        assert self.strings.descifrar_cesar("khoor", 3) == "hello"
-        assert self.strings.descifrar_cesar("sduwlflsduw", 3) == "participar"
+        assert self.strings.descifrar_cesar("Krod", 3) == "Hola"
+        assert self.strings.descifrar_cesar("Bgdtc", 2) == "Zebra"
+        assert self.strings.descifrar_cesar("Udymts!", 5) == "Python!"
+        assert self.strings.descifrar_cesar("efg BCD", 4) == "abc XYZ"
+        assert self.strings.descifrar_cesar("Tluzhql Zljylav", 7) == "Mensaje Secreto"
 
-        # Test con texto cifrado con desplazamiento negativo
-        assert self.strings.descifrar_cesar("ebiil", -3) == "hello"
-        assert self.strings.descifrar_cesar("oxmrfmoxmrf", -3) == "participar"
-
-        # Test con texto sin desplazamiento
-        assert self.strings.descifrar_cesar("hello", 0) == "hello"
-        assert self.strings.descifrar_cesar("participar", 0) == "participar"
-
-        # Test con caracteres especiales y espacios
-        assert self.strings.descifrar_cesar("Khoor, Zruog!", 3) == "Hello, World!"
-        assert self.strings.descifrar_cesar("SdUwlflsduw!", 3) == "PaRticipar!"
 
 

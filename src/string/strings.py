@@ -161,17 +161,17 @@ class Strings:
             str: Cadena descifrada
         """
         texto_descifrado = ""
+        desplazamiento_real = desplazamiento % 26  # Asegura que el desplazamiento esté dentro del rango
 
         for caracter in texto:
             if caracter.isalpha():
-                desplazamiento_real = desplazamiento % 26
                 codigo_base = ord('A') if caracter.isupper() else ord('a')
                 nueva_letra = chr((ord(caracter) - codigo_base - desplazamiento_real) % 26 + codigo_base)
                 texto_descifrado += nueva_letra
             else:
-                texto_descifrado += caracter
+                texto_descifrado += caracter  # Asegura que no se omitan espacios y signos de puntuación
 
-        return texto_descifrado
+        return texto_descifrado 
     
     def encontrar_subcadena(self, texto, subcadena):
         """
