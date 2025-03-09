@@ -114,3 +114,9 @@ class TestStrings:
         # Test con caracteres especiales y espacios
         assert self.strings.descifrar_cesar("Khoor, Zruog!", 3) == "Hello, World!"
         assert self.strings.descifrar_cesar("SdUwlflsduw!", 3) == "PaRticipar!"
+    def test_cifrar_cesar(self):
+        assert self.strings.cifrar_cesar("Hola", 3) == "Krod"
+        assert self.strings.cifrar_cesar("Zebra", 2) == "Bgdtc"
+        assert self.strings.cifrar_cesar("Python!", 5) == "Udymts!"
+        assert self.strings.cifrar_cesar("abc XYZ", 4) == "efg BCD"
+        assert self.strings.cifrar_cesar("Mensaje Secreto", 7) == "Tluzhql Ljlzhual"
